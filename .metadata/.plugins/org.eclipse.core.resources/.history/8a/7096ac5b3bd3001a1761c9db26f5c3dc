@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class SwitchExerciseRunne {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		System.out.println(getNameOfTheDay(n));
+		sc.close();
+	}
+
+	private static String getNameOfTheDay(int a) {
+		String r="";
+		switch(a) {
+		case 0: 
+			r="Sunday";
+			break;
+		case 1: 
+			r="Monday";
+			break;
+		case 2: 
+			r="Tuesday";
+			break;
+		case 3: 
+			r="Wednesday";
+			break;
+		case 4: 
+			r="Thursday";
+			break;
+		case 5: 
+			r="Friday";
+			break;
+		case 6: 
+			r="Saturday";
+			break;
+		}
+		return r;
+	}
+
+}

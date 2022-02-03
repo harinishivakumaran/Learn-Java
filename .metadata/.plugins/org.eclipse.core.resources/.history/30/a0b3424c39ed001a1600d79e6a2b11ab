@@ -1,0 +1,26 @@
+package exceptHandle;
+
+public class ExceptionHandleRunner2 {
+
+	public static void main(String[] args) {
+		method1();
+		System.out.println("Main Done");
+	}
+
+	private static void method1() {
+		method2();
+		System.out.println("Method1 Done");
+	}
+
+	private static void method2() {
+		try{
+			String s=null;
+			System.out.println(s.length());
+			System.out.println("Method2 Done");
+		} catch(Exception ex) {
+			//ex.printStackTrace();
+			System.out.println("Done");
+		}
+	}
+
+}

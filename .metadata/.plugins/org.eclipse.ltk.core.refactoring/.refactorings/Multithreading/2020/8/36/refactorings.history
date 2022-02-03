@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;thread&apos; in &apos;multi.ThreadBasics.main(...)&apos; to &apos;task2Thread&apos;&#x0D;&#x0A;- Original project: &apos;Multithreading&apos;&#x0D;&#x0A;- Original element: &apos;multi.ThreadBasics.main(String[]).thread&apos;&#x0D;&#x0A;- Renamed element: &apos;thread&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;thread&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;multi{ThreadBasics.java[ThreadBasics~main~\[QString;@thread!924!955!931!936!QThread;!0!false" name="task2Thread" references="true" stamp="1598902367469" version="1.0"/>
+</session>

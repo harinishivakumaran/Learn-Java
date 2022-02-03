@@ -1,0 +1,3 @@
+1599504668897	Rename local variable 'obj'
+1599508438044	Encapsulate field 'name'
+1599564694287	Extract local variable 'LengthComparator'

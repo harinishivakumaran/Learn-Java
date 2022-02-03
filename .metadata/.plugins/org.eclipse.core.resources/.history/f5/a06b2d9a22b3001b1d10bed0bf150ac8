@@ -1,0 +1,21 @@
+package intern;
+
+import java.util.Date;
+
+public class DateTimeDemo {
+	
+	private static void testLegacyDateAPI() {
+		
+		System.out.println("\nDate class ... ");
+		Date currentDate=new Date();
+		System.out.println("currentDate: "+currentDate);
+		System.out.println("currentDate in ms: "+currentDate.getTime());
+		System.out.println("\nCalendar class ... ");
+		
+		
+	}
+	public static void main(String[] args) {
+		testLegacyDateAPI();
+	}
+	
+}

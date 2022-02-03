@@ -1,0 +1,24 @@
+public class Intro {
+
+	public static void main(String[] args) {
+		Integer i1=new Integer(5);//constructor to create integers
+		System.out.println(i1);
+		Integer i2=new Integer(5);
+		System.out.println(i2);
+		Integer i3=Integer.valueOf(3); //another method for creation of integers
+		System.out.println(i3);
+		Integer s=new Integer("432"); //also accept string values.
+		System.out.println(s);
+		Boolean b=new Boolean(true); //boolean type
+		Boolean b1=new Boolean("SG"); //can accept string type
+		System.out.println(b);//only for boolean like true tRue True returns true statement others only returns false.
+		System.out.println(b1);
+		Float f=new Float(5.3f);//float argument
+		Float f1=new Float(44.2);//double argument
+		Float f2=new Float("44.3");//string argument
+		System.out.println(f+" "+f1+" "+f2);
+		Character c=new Character('e');
+		System.out.println(c);
+	}
+
+}

@@ -1,0 +1,4 @@
+1599826179439	Extract method 'printGameBoard'
+1599826683020	Extract method 'placePiece'
+1599827970289	Infer generic type arguments
+1599829621185	Rename local variable 'number'

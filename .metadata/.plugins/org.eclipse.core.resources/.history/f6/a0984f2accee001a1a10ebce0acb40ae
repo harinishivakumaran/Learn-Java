@@ -1,0 +1,15 @@
+package concurrentCollections;
+
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class CopyOnWriteArrayListRunner {
+
+	public static void main(String[] args) {
+		List<String> list=new CopyOnWriteArrayList<>();
+		list.add("Rini");
+		list.add("is");
+		list.add("Good");
+	}
+
+}

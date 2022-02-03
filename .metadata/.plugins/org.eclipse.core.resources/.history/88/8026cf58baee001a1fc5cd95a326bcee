@@ -1,0 +1,18 @@
+package concurrentCollections;
+
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.concurrent.atomic.LongAdder;
+
+public class ConcurrentMapRunner {
+
+	public static void main(String[] args) {
+		//find occurances of characters in the given string
+		Map<Character, LongAdder> occurances=new Hashtable<>();
+		
+		String str="ABCD ABCD ABCD";
+		
+
+	}
+
+}

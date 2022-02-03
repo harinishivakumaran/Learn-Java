@@ -1,0 +1,26 @@
+package intern;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class DateTimeDemo {
+	
+	private static void testLegacyDateAPI() {
+		
+		System.out.println("\nDate class ... ");
+		Date currentDate=new Date();
+		System.out.println("currentDate: "+currentDate);
+		System.out.println("currentDate in ms: "+currentDate.getTime());
+		System.out.println("\nCalendar class ... ");
+		Calendar expiryDate=new GregorianCalendar(2021,01,30);
+		expiryDate.add(Calendar.MONTH,9);
+		System.out.println("new expiry date: "+expiryDate.getTime());
+		
+		
+	}
+	public static void main(String[] args) {
+		testLegacyDateAPI();
+	}
+	
+}

@@ -1,0 +1,25 @@
+package concurrentCollections;
+
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class CopyOnWriteArrayListRunner {
+	
+	/* for example
+	add - copy
+	//only add method is synchronized so the other threads can loop over the get method
+	get - 
+	*/
+	public static void main(String[] args) {
+		List<String> list=new CopyOnWriteArrayList<>();
+		//Thread-3
+		list.add("Rini");
+		list.add("is");
+		list.add("Good");
+		//Thread-10000
+		for(String s:list) {
+			System.out.print(s+" ");
+		}
+	}
+
+}

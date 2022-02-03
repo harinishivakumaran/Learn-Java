@@ -1,0 +1,6 @@
+1598116300298	Extract method 'printBasic'
+1598121001927	Extract method 'normalSum'
+1598122968065	Extract method 'fpSum'
+1598124344727	Inline method 'fpOddSum'
+1598124364465	Extract method 'fpSum'
+1598124884057	Extract method 'fpOddSum'

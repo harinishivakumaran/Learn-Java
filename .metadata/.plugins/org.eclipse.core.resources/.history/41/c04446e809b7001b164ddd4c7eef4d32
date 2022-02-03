@@ -1,0 +1,22 @@
+package adcoops;
+import java.util.*;
+public class AccountDetails {
+	Scanner sc=new Scanner(System.in);
+	public Account getAccountDetails() {
+		Account acc=new Account();
+		System.out.println("Enter account id:");
+		int accountId=sc.nextInt();
+		acc.setAccountId(accountId);
+		System.out.println("Enter account type:");
+		String accountType=sc.next();
+		acc.setAccountType(accountType);
+		System.out.println("Enter balance:");
+		int balance=sc.nextInt();
+		acc.setBalance(balance);
+		return acc;
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

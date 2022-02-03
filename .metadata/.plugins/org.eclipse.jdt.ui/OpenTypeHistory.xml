@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Arrays/C:\/Program Files\/Java\/jdk-14.0.2\/lib\/jrt-fs.jar`java.base=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/14\/docs\/api\/=/&lt;java.util.concurrent(CopyOnWriteArrayList.class[CopyOnWriteArrayList" modifiers="33" timestamp="1595656165430"/>
+<typeInfo handle="=Arrays/C:\/Program Files\/Java\/jdk-14.0.2\/lib\/jrt-fs.jar`java.base=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/14\/docs\/api\/=/&lt;java.util.concurrent(CopyOnWriteArraySet.class[CopyOnWriteArraySet" modifiers="33" timestamp="1595656165430"/>
+<typeInfo handle="=intern/src&lt;oopsconcept{Studentoops.java[Studentoops" modifiers="1" timestamp="1620290450586"/>
+<typeInfo handle="=intern/src&lt;abstractshapes{Shape.java[Shape" modifiers="1025" timestamp="1620364165786"/>
+<typeInfo handle="=intern/src&lt;annotation{MyParent.java[MyParent" modifiers="1" timestamp="1620645112055"/>
+<typeInfo handle="=intern/C:\/Program Files\/Java\/jdk-14.0.2\/lib\/jrt-fs.jar`java.base=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/14\/docs\/api\/=/&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1595656165430"/>
+<typeInfo handle="=intern/C:\/Program Files\/Java\/jdk-14.0.2\/lib\/jrt-fs.jar`java.base=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/14\/docs\/api\/=/&lt;java.util.concurrent(Callable.class[Callable" modifiers="1537" timestamp="1595656165430"/>
+<typeInfo handle="=intern/C:\/Program Files\/Java\/jdk-14.0.2\/lib\/jrt-fs.jar`java.base=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/14\/docs\/api\/=/&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1595656165430"/>
+</typeInfoHistroy>

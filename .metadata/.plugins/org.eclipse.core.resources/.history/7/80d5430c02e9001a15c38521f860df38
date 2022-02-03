@@ -1,0 +1,56 @@
+import java.util.*;
+public class RobotRunner {
+	
+	public String moveRobot(int a,int b,String[] po,String[] mo) {
+		String[] pov=po.split(",");
+		String[] mov=mo.split(",");
+		int xx=Integer.parseInt(pov[0]), yy=Integer.parseInt(pov[1]);
+		String d=pov[2];
+		for(String i:mov) {
+			if(i.equals("M")){
+				int ix=xx,iy=yy;
+				if(d.equals("N"))
+					yy++;
+				else if(d.equals("S"))
+					yy--;
+				else if(d.equals("E"))
+					xx++;
+				else if(d.equals("W"))
+					xx--;
+				if(xx>a || yy>b || xx<0 || yy<0) {
+					return String.valueOf(ix)+"-"+String.valueOf(iy)+"-"+d+"-ER";
+				}
+			}
+			else if(i.equals("L")) {
+				if (d.equals("N"))
+					d="W";
+				else if(d.equals("S"))
+					d="E";
+				else if(d.equals("E"))
+					d="N";
+				else if(d.equals("W"))
+					d="S";
+			}
+			else if(i.equals("R")) {
+				if (d.equals("N"))
+					d="E";
+				else if(d.equals("S"))
+					d="W";
+				else if(d.equals("E"))
+					d="S";
+				else if(d.equals("W"))
+					d="N";
+			}
+		}
+		return String.valueOf(xx)+"-"+String.valueOf(yy)+"-"+d;
+		
+	}
+	
+	public static void main(String[] args) {
+		int x=3,y=4;
+		String[] po= {"2","2","E"};
+		String[] mo= {"R","M","L","M","L","M","R","M"};
+		System.out.println(moveRobot(x,y,po,mo));
+	}
+
+}

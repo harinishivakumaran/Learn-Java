@@ -1,0 +1,20 @@
+package concurrentCollections;
+
+public class Counter {
+	
+	int i=0;
+	public void increment() {
+		i++; //i++ is not atomic
+		//three methods
+		//1.get i
+		//2. increment
+		//3.set i
+	}
+	
+	public int getI() {
+		return i;
+	}
+	
+	
+	
+}

@@ -1,0 +1,36 @@
+package concurrentCollections;
+
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class BiCounterWithLock {
+	
+	private int i=0;
+	private int j=0;
+
+	Lock lockforI=new ReentrantLock();
+	Lock lockforJ=new ReentrantLock();
+	
+	public void incrementI() {
+		lockforI.lock();//Get Lock for I
+		i++;
+		lockforI.unlock();//Release Lock for I
+	}
+	
+	public int getI() {
+		return i;
+	}
+	
+	public void incrementJ() {
+		lockforJ.lock();//Get Lock for I
+		j++;
+		lockforJ.unlock();//Release Lock for I
+	}
+	
+	public int getJ() {
+		return j;
+	}
+	
+	
+	
+}

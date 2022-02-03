@@ -1,0 +1,24 @@
+package exceptHandle;
+
+import java.util.Scanner;
+
+public class FinallyRunner {
+
+	public static void main(String[] args) {
+		Scanner sc=null;
+		try {
+			sc=new Scanner(System.in);
+			int[] a= {12,3,4,23};
+			int b=a[9];
+		} catch(Exception e) {
+			//e.printStackTrace(); //prints the thrown exception int the output
+			System.out.println("ExceptionHandled");
+		} finally {
+			//whether try or catch is executed, finally is always executed.
+			System.out.println("Before sc close");
+			sc.close();			
+		}
+		System.out.println("Finish");
+	}
+
+}

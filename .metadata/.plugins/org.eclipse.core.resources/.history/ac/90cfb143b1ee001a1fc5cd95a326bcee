@@ -1,0 +1,30 @@
+package concurrentCollections;
+
+public class BiCounterWithLock {
+	
+	private int i=0;
+	private int j=0;
+	
+	synchronized public void incrementI() {
+		//Get Lock for I
+		i++;
+		//Release Lock for I
+	}
+	
+	public int getI() {
+		return i;
+	}
+	
+	synchronized public void incrementJ() {
+		//Get Lock for I
+		j++;
+		//Release Lock for I
+	}
+	
+	public int getJ() {
+		return j;
+	}
+	
+	
+	
+}

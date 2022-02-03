@@ -1,0 +1,27 @@
+package java8.methodref;
+import java.util.*;
+public class PhoneBook {
+	private List<Contact> phoneBook = new ArrayList<Contact>();
+	
+	public void setPhoneBook(List<Contact> phoneBook) {
+		this.phoneBook=phoneBook;
+	}
+	public List<Contact> getPhoneBook(){
+		return phoneBook;
+	}
+	public void addContact(Contact contactObj) {
+		phoneBook.add(contactObj);
+	}
+	public List<Contact> viewAllContacts(){
+		return getPhoneBook();
+	}
+	public Contact viewContactGivenPhone(long phoneNumber) {
+		List<Contact> li=new ArrayList<>();
+		for(Contact c:phoneBook) {
+			if(c.getPhoneNumber()==phoneNumber) {
+				li.add(c);
+			}
+		}
+		return c;
+	}
+}

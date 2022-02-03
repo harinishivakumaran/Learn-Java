@@ -1,0 +1,39 @@
+package concurrentCollections;
+
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+//to solve the atmoic problem here atomic classes are used.
+
+public class BiCounterWithAtomicInteger {
+	
+	private AtomicInteger i=new AtomicInteger();
+	private AtomicInteger j=new AtomicInteger();
+
+	Lock lockforI=new ReentrantLock();
+	Lock lockforJ=new ReentrantLock();
+	
+	public void incrementI() { 
+		lockforI.lock();//Get Lock for I
+		i++;
+		lockforI.unlock();//Release Lock for I
+	}
+	
+	public int getI() {
+		return i;
+	}
+	
+	public void incrementJ() {
+		lockforJ.lock();//Get Lock for I
+		j++;
+		lockforJ.unlock();//Release Lock for I
+	}
+	
+	public int getJ() {
+		return j;
+	}
+	
+	
+	
+}
